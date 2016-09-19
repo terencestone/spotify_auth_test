@@ -1,2 +1,5 @@
-
-<a href=" https://api.spotify.com/v1/me/playlists?access_token=<%= current_user.token %>">Get Playlists</a>
+<% if current_user %>
+<p><a href=" https://api.spotify.com/v1/me/playlists?access_token=<%= current_user.token %>">Get Playlists</a></p>
+<p><a href=" https://api.spotify.com/v1/me?access_token=<%= current_user.token %>">Get Profile</a></p>
+<p><a href=" https://api.spotify.com/v1/me/albums?access_token=<%= current_user.token %>">Get Albums</a></p>
+<% end %>

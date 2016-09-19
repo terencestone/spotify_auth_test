@@ -10,6 +10,7 @@
 
   <body>
     <div id='container'>
+      <h1>rainbowsunshinecandycakes</h1>
         <div id='user-nav'>
           <% if current_user %>
             Welcome <%= current_user.name %>!
@@ -18,7 +19,7 @@
             <%= link_to "Sign in with Spotify", "/auth/spotify" %>
           <% end %>
         </div>
-      </div>
     <%= yield %>
+    </div>
   </body>
 </html>
